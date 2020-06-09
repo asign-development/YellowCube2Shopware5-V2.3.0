@@ -211,7 +211,7 @@ class PdfaDocument extends Shopware_Components_Document {
 			$this->initTemplateEngine();
 
 			// set the translation component
-			$this->translationComponent = new Shopware_Components_Translation();
+			$this->translationComponent = $this->container->get('translation');
 			$this->setOrder( Enlight_Class::Instance( 'Shopware_Models_Document_Order', [ $orderID, $config ] ) );
 
 			if ( ! empty( $_renderer ) ) {

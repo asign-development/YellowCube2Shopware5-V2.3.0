@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Transfer of YC stock to the shop
 - Stock remains unchanged until carried out by Yellowcube
 - Changes in WAB Name Mapping. Field Name4 doest exist anymore
+- Removed Shopware_Components_Translation() and get the translation component from container: $this->container->get('translation')
 
 ## v2.2.2
 - Don't export multilang article titles from inactive shops
