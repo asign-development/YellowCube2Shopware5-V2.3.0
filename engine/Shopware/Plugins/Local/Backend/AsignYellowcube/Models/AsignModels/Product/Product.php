@@ -33,7 +33,7 @@ use Shopware\Components\Model\ModelEntity;
 /**
  * Shopware\CustomModels\AsignModels\Product\Product
  *
- * @ORM\Table(name="asign_yellowcube_product")
+ * @ORM\Table(name="asign_yellowcube_product",indexes={@ORM\Index(columns={"artid"})})
  * @ORM\Entity(repositoryClass="Repository")
  */
 class Product extends ModelEntity {
